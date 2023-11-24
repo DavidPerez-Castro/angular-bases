@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CounterModule } from './counter/counter.module';
+import { CatsModule } from './cats/cats.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    CounterModule,
+    CatsModule,
     AppRoutingModule
   ],
   providers: [],

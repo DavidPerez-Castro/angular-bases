@@ -1,0 +1,35 @@
+<h1>{{ name }}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd> {{ name }} </dd>
+
+  <td>Edad:</td>
+  <dd> {{ age }} </dd>
+
+  <td>Método:</td>
+  <dd> {{ getCatDescription() }} </dd>
+
+  <td>Alimento:</td>
+  <dd> {{ AlimentName }}</dd>
+</dl>
+
+<button
+*ngIf="name !== 'Botas'"
+(click)="changeCat()"
+class="btn btn-primary mx-2">
+  new name
+</button>
+
+<button
+  *ngIf="age !== 2"
+  (click)="changeAge()"
+  class="btn btn-primary mx-2">
+  update age
+</button>
+
+<button
+  (click)="resetForm()"
+  class="btn btn-primary mx-2">
+  reset
+</button>

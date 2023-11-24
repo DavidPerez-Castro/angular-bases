@@ -1,0 +1,27 @@
+<h3>Lista de gatos!</h3>
+
+<div *ngIf="deletedCat; else nothingWasDeleted">
+  <h3>Gato borrado <small class="text-danger">{{deletedCat}}</small> </h3>
+</div>
+
+<!-- Un div que no existe, solo muestra el contenido dentro de el -->
+<ng-template #nothingWasDeleted>
+  <h3>No ha borrado nada.</h3>
+</ng-template>
+
+
+<button
+  *ngIf="catNames.length > 0"
+  (click)="removeLastCat()"
+  class="btn btn-outline-danger">
+  Borrar último gato
+</button>
+
+<!--  -->
+
+<!-- Hacer Listas con ngFor -->
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of catNames"
+  class="list-group-item">{{name}}</li>
+
+</ul>
