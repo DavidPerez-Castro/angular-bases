@@ -1,0 +1,15 @@
+<h1>Checo Perez</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- onDelete -->
+    <formula1-list [characterList]="characters"
+              (onDelete)="onDeleteCharacter($event)"></formula1-list>
+  </div>
+
+  <div class="col">
+    <!-- add-character -->
+    <formula1-add-character (onNewCharacter)="onNewCharacter($event)" ></formula1-add-character>
+  </div>
+</div>
