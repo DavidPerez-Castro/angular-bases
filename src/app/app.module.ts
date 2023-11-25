@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterModule } from './counter/counter.module';
 import { CatsModule } from './cats/cats.module';
+import { Formula1Module } from './formula1/formula1.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     CounterModule,
     CatsModule,
+    Formula1Module,
     AppRoutingModule
   ],
   providers: [],
